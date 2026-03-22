@@ -1,0 +1,63 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "H+ (Hyper+)",
+  "scopeName": "source.hplus",
+  "fileTypes": ["h+"],
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#blocks"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.number-sign.hplus",
+          "begin": "#",
+          "end": "$",
+          "patterns": []
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.hplus",
+          "match": "\\b(say|when|otherwise|use)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.hplus",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.hplus",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "blocks": {
+      "patterns": [
+        {
+          "name": "punctuation.section.block.begin.hplus",
+          "match": "\\{"
+        },
+        {
+          "name": "punctuation.section.block.end.hplus",
+          "match": "\\}"
+        }
+      ]
+    }
+  }
+}

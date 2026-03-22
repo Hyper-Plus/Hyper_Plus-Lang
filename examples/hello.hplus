@@ -1,0 +1,22 @@
+# H+ demo
+use math
+use text
+use files
+
+say "Welcome to H+"
+ let name = "h+"
+say name
+say math.add(5, 3)
+say math.fib(10)
+say text.upper(name)
+say text.len("simple")
+
+say files.exists("package.json")
+say files.exists("README.md")
+
+when files.exists("README.md") {
+    say "README exists"
+}
+otherwise {
+    say "README missing"
+}

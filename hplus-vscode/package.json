@@ -1,0 +1,25 @@
+{
+  "name": "hplus",
+  "displayName": "",
+  "description": " A very simple and fast programming language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "hplus",
+      "aliases": ["Hyper+", "hplus"],
+      "extensions": [".h+"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "hplus",
+      "scopeName": "source.hplus",
+      "path": "./syntaxes/hplus.tmLanguage.json"
+    }]
+  }
+}
